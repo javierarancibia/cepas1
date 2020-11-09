@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  oenologis: one
+  magazine: one
+  charge: MyString
+
+two:
+  oenologis: two
+  magazine: two
+  charge: MyString
