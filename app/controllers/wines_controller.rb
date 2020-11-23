@@ -5,6 +5,8 @@ class WinesController < ApplicationController
   # GET /wines.json
   def index
     @wines = Wine.all
+    @strains = Strain.all
+    @magazines = Magazine.all
   end
 
   # GET /wines/1
@@ -15,6 +17,8 @@ class WinesController < ApplicationController
   # GET /wines/new
   def new
     @wine = Wine.new
+    @strains = Strain.all
+    @wine_strain = WineStrain.new
   end
 
   # GET /wines/1/edit

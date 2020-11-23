@@ -1,0 +1,22 @@
+<%= form_with(url:  wine_strain_path, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :wine_id, 'Nombre del Vino' %>
+    <%= form.select :wine_id, options_from_collection_for_select(@wines, :id, :name), placeholder: 'Selecciona un vino ...' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :strain_id, 'Cepas de Vino' %>
+    <%= form.select :strain_id, options_from_collection_for_select(@strains, :id, :name), placeholder: 'Selecciona una cepa ...' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :proporcion_de_la_cepa %>
+    <%= form.number_field :proportion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+<% end %>

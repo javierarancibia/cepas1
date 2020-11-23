@@ -1,5 +1,6 @@
-<h1>New Wine</h1>
+<h1>Nuevo Vino</h1>
 
-<%= render 'form', wine: @wine %>
+<%= render 'form', wine: @wine, strains: @strains, wine_strain: @wine_strain %>
 
-<%= link_to 'Back', wines_path %>
+<%= link_to 'Index de Vinos', wines_path %>
+<%= link_to  "Crear registro de Cepa", new_strain_path %>
